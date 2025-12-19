@@ -1,0 +1,465 @@
+body.page-transition {
+	opacity: 0;
+	transition: opacity 400ms ease-in-out;
+}
+body.page-transition.ready {
+	opacity: 1;
+}
+body.page-transition.fade-out {
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+body {
+	background-image: url('../photos/bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 115vh;
+	margin: 0;
+	padding: 0;
+    
+}
+header {
+    font-family: Oswald;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+	text-decoration: underline;
+}
+nav {
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px auto;
+	text-align: center;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+div h1 {
+	font-family: Oswald;
+	text-align: center;
+	font-size: 80px;
+}
+
+
+
+.p1 {
+	font-size: 25px;
+	font-family: Oswald;
+}
+
+.p2 {
+	font-family: Oswald;
+}
+
+div p{
+	font-size: 20px;
+}
+
+.containers {
+	text-align: center;
+	align-content: center;
+	height: 200px;
+}
+
+section{
+	text-align: center;
+	font-family: Oswald;
+}
+
+
+section ul li{
+	list-style-type: none;
+}
+
+div h1{
+	color: white;
+	background-color: black;
+}
+
+.containerr {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.container {
+    background-color: white;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 850px;
+	height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid #000000;
+
+}
+
+.left,
+.middle,
+.right {
+    flex: 1;
+    color: rgb(0, 0, 0);
+}
+
+.middle,
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.middle ul,
+.right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.middle li,
+.right li {
+    margin-bottom: 10px;
+	font-size: 15px;
+	font-family: Oswald;
+}
+
+.aboutme{
+	font-size: 20px;
+	font-family: Oswald;
+	margin: 0 5px 0 0;
+	font-weight: 900;
+}
+
+.educ{
+	font-size: 20px;
+	font-family: Oswald;
+	margin: 30px 5px 0 0;
+	font-weight: 900;
+	
+}
+
+.contactInfo{
+	font-size: 20px;
+	font-family: Oswald;
+	margin: 30px 5px 0 0;
+	font-weight: 900;
+	
+}
+
+.work{
+	font-size: 20px;
+	font-family: Oswald;
+	margin: 0 5px 0 0;
+	font-weight: 900;
+}
+
+.inter{
+	font-size: 20px;
+	font-family: Oswald;
+	margin: 30px 5px 0 0;
+	font-weight: 900;
+	
+}
+
+
+
+
+.toyota-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+	gap: 150px;
+}
+
+.toyota-flex3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+	gap: 150px;
+}
+.toyota-flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+	gap: 50px;
+
+}
+
+.toyota-container {
+	text-align: left;
+    width: 50%;
+	font-family: Oswald;
+	opacity: 0;
+
+	
+}
+.toyota-container3 {
+	text-align: left;
+    width: 50%;
+	font-family: Oswald;
+	opacity: 0;
+
+	
+}
+
+.toyota-image {
+    width: 20%;
+    text-align: center;
+	opacity: 0;
+	
+}
+.toyota-image3 {
+    width: 20%;
+    text-align: center;
+	margin-top: -150px;
+	opacity: 0;
+}
+
+.toyota-container2 {
+	text-align: left;
+    width: 50%;
+	font-family: Oswald;
+	margin-left: -50px;
+	flex: 1;
+	opacity: 0;
+	
+	
+}
+
+
+.toyota-image2 {
+    width: 20%;
+	flex: 1;
+	margin-right: -100px;
+	opacity: 0;
+
+	
+}
+
+
+.toyota-image2 img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.toyota-image3 img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.toyota-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+body.ready .toyota-image,
+body.ready .toyota-image2,
+body.ready .toyota-image3,
+body.ready .toyota-container,
+body.ready .toyota-container2,
+body.ready .toyota-container3 {
+	animation: fadeUp 0.5s ease forwards;
+}
+
+.toyota-flex .toyota-image,
+.toyota-flex .toyota-container {
+	animation-delay: 3.0s;
+}
+
+.toyota-flex2 .toyota-container2,
+.toyota-flex2 .toyota-image2 {
+	animation-delay: 3.5s;
+}
+
+.toyota-flex3 .toyota-image3,
+.toyota-flex3 .toyota-container3 {
+	animation-delay: 4.0s;
+}
+
+@media screen and (max-width: 768px) {
+	
+	html,
+	body {
+		background-position: center;
+		overflow-x: hidden;
+		background-attachment: scroll;
+	}
+	
+	nav ul li a{
+		font-size: 16px;
+		padding: 5px;
+	}
+	
+	nav ul li{
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav {
+		padding-top: 20px;
+	}
+
+	.p1 {
+		padding: 0 auto;
+		margin-top: 100px;
+	}
+	
+	.p2 {
+		
+		margin-bottom: 50px;
+	}
+	
+	.container {
+		margin-top: 100px;
+		margin: 35px;
+		width: 250px;
+		height: auto;
+		display: inline-block;
+	}
+	
+	.containers {
+		padding: 0 auto;
+		margin-bottom: 75px;
+	}
+
+	
+
+	.toyota-left {
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.toyota-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	
+
+	.toyota-image {
+		width: 90%;
+	}
+
+	.toyota-flex {
+		flex-direction: column;
+	}
+
+	.toyota-container {
+		width: 90%;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	html,
+	body{
+		background-position: center;
+		overflow-x: hidden;
+		height: 100vh;
+	}
+	
+	nav ul li a{
+		font-size: 30px;
+		padding: 20px;
+	}
+	
+	nav ul li{
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav {
+		margin: 20px 0 0 0;
+	}
+	
+	.container {
+		margin-top: 100px;
+		margin: 35px;
+		width: 660px;
+		height: auto;
+		display: inline-flex;
+	}
+	
+	ul {
+		margin-left: 10px;
+	}
+	
+
+
+	.toyota-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.toyota-image {
+		width: 90%;
+	}
+
+	.toyota-flex {
+		flex-direction: column;
+	}
+
+	.toyota-container {
+		width: 90%;
+		text-align: center;
+	}
+
+}

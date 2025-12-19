@@ -1,0 +1,137 @@
+body.page-transition {
+	opacity: 0;
+	transition: opacity 400ms ease-in-out;
+}
+body.page-transition.ready {
+	opacity: 1;
+}
+body.page-transition.fade-out {
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+body {
+	background-image: url('../photos/bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+    
+}
+header {
+    font-family: Oswald;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+	text-decoration: underline;
+}
+nav {
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px auto;
+	text-align: center;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+div h1 {
+	font-family: Oswald;
+	text-align: center;
+	font-size: 80px;
+}
+
+
+div h1{
+	color: white;
+	background-color: black;
+}
+
+.container {
+    opacity: 0;
+}
+
+body.ready .container {
+    animation: fadeUp 0.5s ease forwards;
+    animation-delay: 0.7s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	
+	html,
+	body {
+		background-position: center;
+		overflow-x: hidden;
+		background-attachment: scroll;
+	}
+	
+	nav ul li a{
+		font-size: 16px;
+		padding: 5px;
+	}
+	
+	nav ul li{
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav {
+		padding-top: 20px;
+	}
+	
+	.socmed a{
+		text-align: center;
+		display: flex;
+	}
+	
+	p {
+		margin: 0;
+		font-size: 20px;
+	}
+	
+	.p2 {
+		margin-bottom: 35px;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	html,
+	body{
+		background-position: center;
+		overflow-x: hidden;
+		height: 100vh;
+	}
+	
+	nav ul li a{
+		font-size: 30px;
+		padding: 20px;
+	}
+	
+	nav ul li{
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav {
+		margin: 20px 0 0 0;
+	}
+}
+
